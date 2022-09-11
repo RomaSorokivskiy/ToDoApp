@@ -14,7 +14,7 @@ const ModalWindow = (props) => {
     })
     setInput('')
   }
-  if (props.edit == false) {
+  if (props.edit === false) {
     return (
       <form className='absolute top-[215px] space-y-2 rounded-2xl left-[300px] items-center flex flex-col py-5 bg-[#371B58]'>
         <input className='w-[80%]' type='text' placeholder='add new ToDo' value={input} onChange={HandleChange} />
